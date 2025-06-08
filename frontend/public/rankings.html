@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings - InfluenceRank</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <!-- Rankings Page -->
+    <div class="rankings" id="rankings">
+        <h2>Explore Influencer Rankings</h2>
+
+        <!-- Add Influencer Form -->
+        <div id="form-container">
+            <h2>Add Influencer Data</h2>
+            <form id="influencer-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="followers">Followers:</label>
+                <input type="number" id="followers" name="followers" required>
+
+                <label for="likes">Likes:</label>
+                <input type="number" id="likes" name="likes">
+
+                <label for="comments">Comments:</label>
+                <input type="number" id="comments" name="comments">
+
+                <label for="shares">Shares:</label>
+                <input type="number" id="shares" name="shares">
+
+
+                <div class="button-container">
+                    <!-- Add Influencer Button -->
+                    <button class="add-influencer-btn">Add Influencer</button>
+
+                    <!-- Show Graph Button -->
+                </div>
+            </form>
+            <a href="graph.html">
+                <button class="show-graph-btn">Show Graph</button>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
